@@ -1,0 +1,111 @@
+body{
+  font-family: Arial;
+  background-color: rgb(26, 26, 26);
+}
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.title{
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+.buttons{
+  margin-top: 20px;
+}
+.js-result, .js-moves, .js-score{
+  color: white;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.js-score{
+  margin-bottom: 30px;
+}
+.js-moves{
+  margin-top: 20px;
+}
+.js-result{
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 25px;
+}
+.move{
+  background-color: transparent;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.15s;
+  position: relative;
+  z-index: 2;
+  margin-right: 15px;
+}
+.move:hover{
+  background-color: white;
+}
+.move:active{
+  opacity: 0.5;
+}
+.move-img{
+  width: 50px;
+  object-fit: contain;
+  border: none;
+  margin-left: 5px;
+  border-radius: 50px;
+}
+.move-img-rock{
+  width: 50px;
+  object-fit: contain;
+  border: none;
+  margin-bottom: 5px;
+  border-radius: 50px;
+}
+.reset{
+  padding: 10px 15px 10px 15px;
+  background-color: white;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  transition: 0.20s;
+  cursor: pointer;
+}
+.reset:hover{
+  border-style: solid;
+  border-color: orange;
+  border-width: 2px;
+  font-weight: bold;
+}
+.reset:active{
+  border-width: 5px;
+}
+.info{
+  position: absolute;
+  color: white;
+  bottom: -35px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.116);
+  padding: 3px 8px 4px 8px;
+  border: none;
+  border-radius: 4px;
+  opacity: 0;
+  transition: 0.20s;
+  z-index: 2;
+}
+.move:hover .info{
+  opacity: 1;
+  pointer-events: none;
+}
